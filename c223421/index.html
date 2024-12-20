@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Shelf</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://c...content-available-to-author-only...s.com"></script>
+    <link href="https://c...content-available-to-author-only...e.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#ff725e]">
+    <div class="flex h-screen max-w-[1920px] mx-auto">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white p-6 flex flex-col gap-8">
+            <div class="flex items-center gap-2">
+                <h1 class="font-bold text-xl">My <span class="text-[#ff725e]">Book</span></h1>
+                <span class="text-xl">Shelf</span>
+            </div>
+            
+            <nav class="space-y-4">
+                <a href="#" class="flex items-center gap-3 text-black/70 hover:text-black">
+                    <i class="fas fa-home w-5"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 text-black/70 hover:text-black">
+                    <i class="fas fa-search w-5"></i>
+                    <span>Search</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 text-black/70 hover:text-black">
+                    <i class="fas fa-book w-5"></i>
+                    <span>My Shelf</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 text-black/70 hover:text-black">
+                    <i class="fas fa-heart w-5"></i>
+                    <span>Favourite</span>
+                </a>
+            </nav>
+
+            <div class="mt-auto space-y-2 text-sm text-gray-600">
+                <a href="#" class="block hover:text-black">About</a>
+                <a href="#" class="block hover:text-black">Support</a>
+                <a href="#" class="block hover:text-black">Terms & Condition</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 bg-gray-50 rounded-tl-3xl p-6 overflow-y-auto">
+            <!-- Header -->
+            <header class="flex items-center justify-between mb-8">
+                <div class="relative flex-1 max-w-md">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="search" placeholder="Search" class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#ff725e] focus:border-transparent">
+                </div>
+                <div class="flex items-center gap-6">
+                    <button class="px-4 py-1 border rounded-lg hover:bg-gray-50 flex items-center gap-2">
+                        Lang <i class="fas fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <span class="text-sm text-gray-600">09:09 AM</span>
+                    <span class="text-sm text-gray-600">4-MAR-2023</span>
+                    <button class="flex items-center gap-2 hover:bg-gray-50 px-3 py-1 rounded-lg">
+                        <img src="/placeholder.svg" alt="User" class="w-6 h-6 rounded-full">
+                        <span>Kenson</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="grid grid-cols-[2fr_1fr] gap-6 mb-8">
+                <!-- Quote Section -->
+                <div class="bg-[#9C4470] text-white p-6 rounded-xl">
+                    <h2 class="font-semibold mb-4">Today's Quote</h2>
+                    <p class="text-lg">"There is more treasure in books than in all the pirate's loot on Treasure Island."</p>
+                    <p class="mt-2 text-white/80">-Walt Disney</p>
+                    <div class="flex gap-1 mt-4">
+                        <div class="w-2 h-2 bg-white rounded-full opacity-100"></div>
+                        <div class="w-2 h-2 bg-white rounded-full opacity-50"></div>
+                        <div class="w-2 h-2 bg-white rounded-full opacity-50"></div>
+                    </div>
+                </div>
+
+                <!-- New Arrivals -->
+                <div class="flex gap-4">
+                    <div class="bg-[#9C4470] text-white px-2 py-6 rounded-xl flex items-center">
+                        <span class="transform -rotate-90 whitespace-nowrap">New Arrivals</span>
+                    </div>
+                    <div class="overflow-x-auto flex-1 rounded-xl bg-white p-4">
+                        <div class="flex gap-4">
+                            <img src="/Asset/HOLY BIBEL.png" alt="Holy Bible" class="w-[80px] h-[120px] rounded-lg shadow-lg object-cover">
+                            <img src="/Asset/HARRY.png" alt="Harry Potter" class="w-[80px] h-[120px] rounded-lg shadow-lg object-cover">
+                            <img src="/Asset/LEAN.png" alt="Lean UX" class="w-[80px] h-[120px] rounded-lg shadow-lg object-cover">
+                            <img src="/Asset/DONT MAKE.png" alt="Don't Make Me Think" class="w-[80px] h-[120px] rounded-lg shadow-lg object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Good Morning Section -->
+            <div class="space-y-8">
+                <h2 class="text-2xl font-semibold">Good Morning</h2>
+                
+                <!-- Recommended Books -->
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-medium">Recommended for You</h3>
+                        <button class="text-gray-600 hover:text-black flex items-center gap-1">
+                            Show All
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <div class="flex gap-6 pb-4">
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/DONT MAKE.png" alt="Don't Make Me Think" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">Don't Make Me Think</h4>
+                                <p class="text-sm text-gray-600">Steve Krug, 2000</p>
+                            </div>
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/THE DESIGN.png" alt="Design of Everyday Things" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">Design of Everyday Things</h4>
+                                <p class="text-sm text-gray-600">Don Norman, 1988</p>
+                            </div>
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/SPRINT.png" alt="Sprint" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">Sprint</h4>
+                                <p class="text-sm text-gray-600">Jake Knapp, 2016</p>
+                            </div>
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/LEAN.png" alt="Lean UX" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">Lean UX</h4>
+                                <p class="text-sm text-gray-600">Jeff Gothelf, 2013</p>
+                            </div>
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/REACT.png" alt="React" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">React</h4>
+                                <p class="text-sm text-gray-600">Meta, 2023</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Readings -->
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-medium">Recent Readings</h3>
+                        <button class="text-gray-600 hover:text-black flex items-center gap-1">
+                            Show All
+                            <i class="fas fa-chevron-right text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <div class="flex gap-6 pb-4">
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/RICH DAD.png" alt="Rich Dad Poor Dad" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">Rich Dad Poor Dad</h4>
+                                <p class="text-sm text-gray-600">Robert Kiyosaki, 1997</p>
+                            </div>
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/HARRY.png" alt="Harry Potter" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">Harry Potter</h4>
+                                <p class="text-sm text-gray-600">J.K. Rowling, 1997</p>
+                            </div>
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/SPRINT.png" alt="Sprint" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">Sprint</h4>
+                                <p class="text-sm text-gray-600">Jake Knapp, 2016</p>
+                            </div>
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/LEAN.png" alt="Lean UX" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">Lean UX</h4>
+                                <p class="text-sm text-gray-600">Jeff Gothelf, 2013</p>
+                            </div>
+                            <div class="w-[150px] flex-shrink-0">
+                                <img src="/Asset/REACT.png" alt="React" class="w-full aspect-[3/4] rounded-lg shadow-lg object-cover mb-2">
+                                <h4 class="font-medium truncate">React</h4>
+                                <p class="text-sm text-gray-600">Meta, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
